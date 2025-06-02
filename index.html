@@ -3,51 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Александра</title>
-  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <title>Александра — бизнес консультант</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Comfortaa', sans-serif;
-      background: url('https://i.imgur.com/B02G7PO.jpg') no-repeat center center fixed;
+      background-image: url('green-marble.jpg'); /* добавь файл фона с этим именем */
       background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
       color: #333;
     }
-
     .container {
-      max-width: 700px;
-      margin: auto;
-      padding: 30px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      backdrop-filter: blur(8px);
     }
-
-    .header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    .header h1 {
-      font-size: 2.8em;
-      margin: 0;
-    }
-
-    .header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-      color: #555;
-    }
-
     .block {
-      background: rgba(255, 255, 255, 0.8);
-      border-radius: 20px;
-      padding: 25px;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 2rem;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       opacity: 0;
       transform: translateY(20px);
       animation: fadeInUp 1s forwards;
     }
-
-    .block:nth-child(2) { animation-delay: 0.3s; }
+    .block:nth-child(1) { animation-delay: 0.2s; }
+    .block:nth-child(2) { animation-delay: 0.4s; }
     .block:nth-child(3) { animation-delay: 0.6s; }
 
     @keyframes fadeInUp {
@@ -60,54 +45,63 @@
     .qr {
       display: flex;
       justify-content: space-around;
-      margin-top: 20px;
+      margin: 2rem 0;
     }
-
     .qr img {
       width: 120px;
       height: 120px;
-      border-radius: 15px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-
     footer {
       text-align: center;
-      font-size: 0.9em;
-      color: #666;
-      margin-top: 40px;
+      font-size: 0.9rem;
+      margin: 2rem 0;
+      color: #444;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">
+    <div class="block">
       <h1>Александра</h1>
-      <p>Бизнес-консультант</p>
+      <h3>бизнес консультант</h3>
     </div>
 
     <div class="block">
-      <h3>Обо мне</h3>
-      <p>Консультирую предпринимателей по вопросам бизнеса, развития и стратегий. Работаю с малым и средним бизнесом по всей России.</p>
+      <p>Я помогаю бизнесу запускать и сопровождать продажи на маркетплейсах Amazon и Noon, настраиваю учётные системы и автоматизирую рутину.</p>
+      <p>Работаю на русском, английском и украинском языках.</p>
     </div>
 
     <div class="block">
-      <h3>Контакты</h3>
-      <div class="qr">
-        <div class="qr">
-  <div>
-    <img src="qr_whatsapp.png" alt="WhatsApp QR" />
-    <p style="text-align: center;">WhatsApp</p>
-  </div>
-  <div>
-    <img src="qr_telegram.png" alt="Telegram QR" />
-    <p style="text-align: center;">Telegram</p>
-  </div>
-</div>
+      <h2>Обо мне</h2>
+      <p>Ранее я работала продакт-менеджером в производстве одежды. Вела аналитику запасов и продаж, работала в 1С, взаимодействовала с контрагентами, проверяла документы и оформляла маркировку "Честный Знак".</p>
+      <p>Сейчас я консультирую предпринимателей: веду маркетплейсы, настраиваю Zoho, делаю контент и рекламу, работаю с документацией и клиентами на русском и английском.</p>
+    </div>
+
+    <div class="block">
+      <h2>Чем могу помочь</h2>
+      <ul>
+        <li>Ведение маркетплейсов Amazon и Noon</li>
+        <li>Создание карточек товара (описания, фото, скидки, реклама)</li>
+        <li>Настройка Zoho (учёт, склад, бухгалтерия, инвойсы)</li>
+        <li>Работа с документооборотом (УПД, акты, накладные, Честный Знак)</li>
+        <li>Ведение переписки с блогерами и клиентами</li>
+        <li>Работа в Excel, Adobe Illustrator, 1С</li>
+      </ul>
+    </div>
+
+    <div class="block qr">
+      <div>
+        <img src="qr_whatsapp.png" alt="WhatsApp QR">
+        <p style="text-align:center;">WhatsApp</p>
+      </div>
+      <div>
+        <img src="qr_telegram.png" alt="Telegram QR">
+        <p style="text-align:center;">Telegram</p>
       </div>
     </div>
 
     <footer>
-      ИП Матузко Александра Юрьевна<br/>
+      ИП Матузко Александра Юрьевна<br>
       ИНН 100133358430
     </footer>
   </div>
